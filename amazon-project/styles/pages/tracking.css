@@ -1,0 +1,87 @@
+ .header .middle-section .input-search{
+    height: 35px;
+    width: 400px;
+    text-align: center;
+}
+
+.header .orders-text{
+    color:white;
+}
+
+.tracking-page{
+    font-family: Arial;
+    margin-top : 70px;
+}
+
+.tracking-page .image{
+    height: 200px;
+    
+}
+
+.tracking-page .product-image{
+    margin-bottom: 20px;
+}
+
+.tracking-page .order-tracking{
+    padding: 30px;
+}
+
+.tracking-page .delivery-date{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.tracking-page .product-info{
+    margin-bottom: 10px;
+} 
+
+.tracking-page .product-quantity{
+    margin-bottom: 10px;
+}
+
+.progress-labels-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.current-status {
+  color: rgb(6, 125, 98);
+}
+
+@media (max-width: 575px) {
+  .progress-labels-container {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .progress-labels-container {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+
+  .progress-label {
+    margin-bottom: 3px;
+  }
+}
+
+.progress-bar-container {
+  height: 25px;
+  width: 100%;
+
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: green;
+  border-radius: 50px;
+  width: 50%;
+}

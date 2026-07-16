@@ -1,0 +1,32 @@
+.body{
+    font-family: Roboto , Arial;
+}
+
+.checkout-header{
+    display: flex;
+    align-items: center;
+    color:green;
+    background-color: white;
+
+    justify-content: space-between;
+    position: fixed;
+
+}
+
+.checkout-header .header-content{
+    display: flex;
+    margin : 20px
+}
+
+.checkout-header .checkout-header-left-section{
+    margin-right: 80px
+}
+
+.checkout-header .checkout-header-middle-section{
+    font-size: 20px;
+    margin-right: 200px;
+    font-weight: bold;
+}
+
+
+

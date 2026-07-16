@@ -1,0 +1,128 @@
+.body{
+    font-family: Arial; 
+}
+
+.checkout-grid .product-image{
+    height: 100px;
+    margin: 20px;
+}
+
+.checkout-grid{
+    display: flex;
+    margin-top:15px;
+    align-items:center;
+    flex-direction: column;
+    
+}
+
+.checkout-grid .cart-item-container{
+    display: flex;
+    
+    
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 15px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.checkout-grid .cart-item-details .product-name{
+    font-weight: bold;
+    margin: 10px;
+}
+
+.checkout-grid .cart-item-details .product-price{
+    font-weight: bold;
+    color: darkred;
+    margin-bottom: 10px;
+}
+
+.checkout-grid .cart-item-details .product-quantity{
+    
+    margin: 10px;
+}
+
+
+.checkout-grid .delivery-date{
+    font-weight: bold;
+    color: green;
+    font-size: 20px
+}
+
+.checkout-grid .payment-summary{
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkout-grid .payment-summary-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.checkout-grid .payment-summary-row{
+    display: flex;
+    padding:10px;
+    justify-content: space-between;
+}
+
+.checkout-grid .payment-summary .payment-summary-money{
+    
+    margin-left: 120px
+
+}
+
+.checkout-grid .place-order-button{
+    padding: 10px;
+}
+
+
+.checkout-grid .delivery-options-title{
+    font-weight: bold;
+    margin-bottom:10px;
+}
+
+.checkout-grid .delivery-option{
+    display: flex;
+    padding:10px;
+    
+}
+
+.checkout-grid .delivery-option-date{
+    color: green;
+}
+
+.total{
+    color: darkred;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.save-quantity-link{
+    
+    display: none;
+}
+
+.quantity-input{
+    display: none;
+}
+
+.is-editing-quantity .quantity-input{
+    display: initial;
+}
+
+.is-editing-quantity .save-quantity-link{
+    display: initial;
+    
+}
+
+.is-editing-quantity .update-quantity-link{
+    display: none;
+}

@@ -1,0 +1,115 @@
+.order-page{
+    font-family: Arial;
+    margin-top: 60px;
+    
+}
+
+
+.order-page .page-title{
+    padding: 30px;
+
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.order-page .order-grid{
+    
+    margin-left: 100px;
+
+    border-color: 1px solid black; 
+}
+
+
+.order-page .order-container{
+    
+    width: 700px;
+    border-radius: 20px;
+    border: 1px solid black;
+    align-items : center;
+
+}
+
+.order-page .order-header{
+    height: 40px;
+    border: 1px solid darkgrey;
+    border-radius: 20px;
+    background-color: rgb(232, 230, 230);
+    display: flex;
+    padding: 20px
+}
+
+.order-page .order-header-left{
+    margin-right:55px;
+    margin-left:10px;
+}
+
+.order-page .order-header-middle{
+    margin-right:55px;
+    margin-left:10px;
+}
+
+.order-page .order-header-right{
+    margin-right:55px;
+    margin-left:10px;
+}
+
+
+.order-page .image{
+    height:130px;
+    padding: 20px;
+}
+
+.order-page .order-grid-details{
+    display: flex;
+    margin : 20px;
+    
+
+}
+
+
+
+.order-page .order-details{
+    
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.order-page .product-name{
+    font-weight: bold;
+    margin-bottom: 10px;
+     
+}
+
+.order-page .buy-it-again-button{
+    width: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:green;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    
+}
+
+.order-page .delivery-date{
+    margin-bottom: 10px;
+}
+
+.order-page .product-actions{
+    display : flex;
+    flex-direction : column;
+}
+
+.order-page  .track-package-button{
+    margin: 10px;
+    border: 1px solid grey;
+    padding:10px;
+    border-radius: 10px;
+}
+
+
+
+
+

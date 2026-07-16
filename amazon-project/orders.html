@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>orders</title>
+
+     <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/pages/orders.css">
+
+</head>
+<body>
+    
+    <div class="header">
+        <div class="left-section">
+            <a href="index.html" class="header-link">
+                <img src="images/logo-white.png" class="logo"/>
+                <img src="images/mobile-logo-white.png" class="mobile-logo"/>
+            </a>
+        </div>
+
+        <div class="middle-section">
+            <input class="search-bar" type="text" placeholder="search"/>
+
+            <button class="search-button">
+                <img class="search-icon" src="images/icons/search-icon.png"/>
+            </button>
+        </div>
+
+        <div class="rigth-section">
+            
+             <a class="orders-link header-link" href="orders.html">
+                <span class="orders-text">Orders</span>
+             </a>
+            </div>
+
+            <a class="cart-link header-link" href="checkout.html">
+                <img src="images/icons/cart-icon.png" class="cart-icon"/>
+                <div class="cart-quantity">3</div>
+                <div class="cart-text">Cart</div>
+            </a>
+
+        </div>
+    </div>
+    
+    <div class="order-page">
+        <div class="page-title">Your Orders</div>
+
+        <div class="order-grid">
+            <div class="order-container">
+                <div class="order-header">
+                    <div class="order-header-left">
+                        <span>Order Placed:</span>
+                        <span>June 26</span>
+                    </div>
+
+                    <div class="order-header-middle">
+                        <span>Total:</span>
+                        <span>$52.51</span>
+                    </div>
+
+                    <div class="order-header-right">
+                        <span>Order ID:</span>
+                        <span>c35d94e9-2c59-6845-d36c-176bc3df7d6b</span>
+                    </div>
+                </div>
+
+                <div class="order-grid-details">
+                    <div class="product-image">
+                        <img src="images\products\athletic-cotton-socks-6-pairs.jpg" class="image"/>
+                    </div>
+
+                    <div class="product-details">
+                        <div class="product-name">
+                            Black and Gray Athletic Cotton Socks - 6 Pairs
+                        </div>
+
+                        <div class="delivery-date">
+                            Arriving on: July 7
+                        </div>
+
+                        <div class="product-quantity">
+                            Quantity: 2
+                        </div>
+
+                        <button class="buy-it-again-button" >
+                            Buy it again
+                        </button>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="tracking.html">
+                            <button class="track-package-button button-secondary">
+                                Track package
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="order-grid-details">
+                    <div class="product-image">
+                        <img  class="image" src= "images\products\intermediate-composite-basketball.jpg"/>
+                    </div>
+
+                    <div class="order-details">
+                        <div class="product-name">
+                            Intermediate Size Basketbll
+                        </div>
+
+                        <div class="delivery-date">
+                            Arriving on: July 1
+                        </div>
+
+                        <div class="product-quantity">
+                            Quantity: 1
+                        </div>
+
+                        <button class="buy-it-again-button">
+                            Buy it again
+                        </button>
+                    </div>
+
+                    <div class="product-actions">
+                        <a href="tracking.html">
+                            <button class="track-package-button" >
+                                Track package
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

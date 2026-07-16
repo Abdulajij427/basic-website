@@ -1,0 +1,122 @@
+class Cart {
+    cartItems = undefined;
+    localStorageKey = undefined;
+
+    constructor(localStorageKey) {
+        this.localStorageKey = localStorageKey;
+        this.loadFromStorage();
+        
+    }
+
+
+    loadFromStorage(){
+        this.cartItems = JSON.parse(localStorage.getItem('cart-oop'));
+
+        if(!this.cartItems){
+                this.cartItems = [{
+                productId : 'socks-1',
+                quantity :  2,
+                deliveryOptionId: '1'
+            },{
+                productId : 'basketball-1',
+                quantity : 1,
+                deliveryOptionId : '2' 
+            }];
+        }
+    };
+
+    saveToStorage() {
+    localStorage.setItem(this.localStorageKey, JSON.stringify(this.cartItems));
+    };
+
+     addToCart(productId){
+    //   use DOM to get the quantity selector 
+      const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
+      const quantity1 = Number(quantitySelector.value);
+    
+      let  matchingItem;   
+        
+        this.cartItems.forEach((cartItem) =>{
+            if(productId === cartItem.productId) {
+                matchingItem = cartItem;
+            }
+        });
+
+        if(matchingItem) {
+            matchingItem.quantity += quantity1;
+        } else{
+           this.cartItems.push({
+                productId: productId,
+                quantity: quantity1,
+                deliveryOptionId : '1'
+            }); 
+        }
+
+        this.saveToStorage();
+    };
+
+    removeFromCart(productId){
+    const newCart = [];
+
+    this.cartItems.forEach((cartItem) =>{
+        if(cartItem.productId !== productId){
+            newCart.push(cartItem);
+        }
+    });
+
+
+    this.cartItems = newCart ;
+
+    this.saveToStorage();
+    };
+
+    updateDeliveryOption(productId, deliveryOptionId) {
+        // steps
+        // step 1 = Loop through the cart and find product
+        // step 2 = Update the deliveryOptionId of the product
+        let matchingProductId;
+        this.cartItems.forEach((cartItem)=>{
+            if(cartItem.productId === productId){
+                matchingProductId = cartItem;
+            }
+        });
+    
+        matchingProductId.deliveryOptionId = deliveryOptionId;
+        this.saveToStorage();
+    
+        
+    };
+}
+
+
+
+
+// create a function that generates objects 
+
+const cart = new Cart('cart-oop');
+const businessCart = new Cart('cart-business');
+
+cart.localStorageKey = 'cart-oop';
+businessCart.localStorageKey = 'cart-business';
+
+
+cart.loadFromStorage();
+businessCart.loadFromStorage();
+
+console.log(cart);
+console.log(businessCart);
+console.log(businessCart instanceof Cart);
+
+        
+    
+        
+    
+
+
+
+
+
+
+
+
+ 
